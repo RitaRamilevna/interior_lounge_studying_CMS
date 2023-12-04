@@ -1,0 +1,106 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("fonts/montserrat/montserrat-regular.woff2") format("woff2"),
+    url("fonts/montserrat/montserrat-regular.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  min-width: 1440px;
+  height: 100%;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Montserrat", "Tahoma", sans-serif;
+  color: #000000;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 1100px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.page-body {
+  padding: 60px 0;
+  background-color: #fffdf8;
+}
+
+.wysiwyg-wrapper h1 {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.wysiwyg-wrapper h2 {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: normal;
+  color: #9f7303;
+}
+
+.wysiwyg-wrapper h3 {
+  margin: 0;
+  margin-bottom: 34px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: normal;
+  color: #9f7303;
+}
+
+.wysiwyg-wrapper ul,
+.wysiwyg-wrapper ol {
+  margin-bottom: 56px;
+  padding-left: 22px;
+}
+
+.wysiwyg-wrapper li {
+  position: relative;
+  margin-bottom: 16px;
+  list-style: none;
+}
+
+.wysiwyg-wrapper li::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -20px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #f5d581;
+  transform: rotate(45deg);
+}
+
+.wysiwyg-wrapper blockquote {
+  width: 70%;
+  margin: 60px auto 60px auto;
+  padding: 40px 97px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: #9f7303;
+  border-top: 1px solid #f5d581;
+  border-bottom: 1px solid #f5d581;
+}
